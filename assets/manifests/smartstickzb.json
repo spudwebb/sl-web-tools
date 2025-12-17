@@ -1,0 +1,54 @@
+{
+	"product_name": "HomeSeer SmartStick Zigbee",
+	"probe_methods": [{
+		"protocol": "bootloader",
+		"baudrate": 115200
+	}, {
+		"protocol": "ezsp",
+		"baudrate": 115200
+	}, {
+		"protocol": "ezsp",
+		"baudrate": 230400
+	}, {
+		"protocol": "spinel",
+		"baudrate": 460800
+	}, {
+		"protocol": "cpc",
+		"baudrate": 460800
+	}, {
+		"protocol": "cpc",
+		"baudrate": 115200
+	}, {
+		"protocol": "cpc",
+		"baudrate": 230400
+	}],
+	"usb_filters": [{
+		"pid": 29987,
+		"vid": 6790
+	}, {
+		"pid": 21972,
+		"vid": 6790
+	}],
+	"firmwares": [		
+		{
+			"name": "8.0.2.0",
+			"url": "assets/firmwares/SmartStick_ZB_8.0.2.0.gbl",
+			"type": "zigbee_ncp",
+			"version": "8.0.2.0"
+		},
+		{
+			"name": "7.0.4.4",
+			"url": "assets/firmwares/SmartStick_ZB-744.gbl",
+			"type": "zigbee_ncp",
+			"version": "7.0.4.4"
+		},
+		{
+			"name": "Sonoff",
+			"url": "https://raw.githubusercontent.com/darkxst/silabs-firmware-builder/main/firmware_builds/zbdonglee/ncp-uart-hw-v7.4.4.0-zbdonglee-115200.gbl",
+			"type": "zigbee_ncp",
+			"version": "7.4.4.0"
+		}
+	],
+	"allow_custom_firmware_upload": true,
+	"bootloader_reset": ["rts_dtr"]
+}

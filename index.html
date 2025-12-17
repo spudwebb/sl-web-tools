@@ -8,11 +8,11 @@
     />
     <meta
       name="Description"
-      content="Nabu Casa SkyConnect zigbee firmware flasher"
+      content="HomeSeer SmartStick ZB firmware flasher"
     />
     <base href="/" />
 
-    <title>Nabu Casa Zigbee Flasher</title>
+    <title>HomeSeer Zigbee Flasher</title>
     <style>
       html,
       body {
@@ -48,28 +48,21 @@
 
   <body>
     <main>
-      <h1>
-        <img
-          src="https://skyconnect.home-assistant.io/images/skyconnect-logo.png"
-          alt="SkyConnect logo"
-        />
-        Flasher
-      </h1>
+	 <h1>HomeSeer SmartStick ZB  Flasher</h1>
+      <img
+          src="https://homeseer.com/wp-content/uploads/2025/06/Zig-bee-1-768x538.png"
+          alt="SmartStick ZB" width="500px"
+      />
 
-      <p>To get started, plug your SkyConnect into this computer.</p>
+      <p>To get started, plug your SmartStick ZB into this computer.</p>
 
-      <nabucasa-zigbee-flasher manifest="./assets/manifests/skyconnect.json">
+      <nabucasa-zigbee-flasher manifest="./assets/manifests/smartstickzb.json">
         <span slot="button">Connect</span>
       </nabucasa-zigbee-flasher>
     </main>
 
     <script module>
-      import(
-        // In development we import locally.
-        window.location.hostname === 'localhost'
-          ? '/dist/web/nabucasa-zigbee-flasher.js'
-          : 'https://unpkg.com/@nabucasa/sl-web-tools@0.11.0/dist/web/nabucasa-zigbee-flasher.js?module'
-      );
+      import('./dist/web/nabucasa-zigbee-flasher.js');
     </script>
   </body>
 </html>
