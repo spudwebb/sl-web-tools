@@ -95,6 +95,12 @@ export async function setupPyodide(onStateChange) {
             }
         }
     }
+    //side-load universal-silabs-flasher
+    const wheelPath = './universal_silabs_flasher-0.1.2-py3-none-any.whl';
+    await micropip.install.callKwargs({
+        requirements: wheelPath,
+        deps: false,
+    });
     // Install all packages to recreate the venv
     await micropip.install.callKwargs({
         requirements: requirements,
