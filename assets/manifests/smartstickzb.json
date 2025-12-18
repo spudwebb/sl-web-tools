@@ -25,9 +25,6 @@
 	"usb_filters": [{
 		"pid": 29987,
 		"vid": 6790
-	}, {
-		"pid": 21972,
-		"vid": 6790
 	}],
 	"firmwares": [		
 		{
@@ -41,12 +38,6 @@
 			"url": "assets/firmwares/SmartStick_ZB-744.gbl",
 			"type": "zigbee_ncp",
 			"version": "7.0.4.4"
-		},
-		{
-			"name": "Sonoff",
-			"url": "https://raw.githubusercontent.com/darkxst/silabs-firmware-builder/main/firmware_builds/zbdonglee/ncp-uart-hw-v7.4.4.0-zbdonglee-115200.gbl",
-			"type": "zigbee_ncp",
-			"version": "7.4.4.0"
 		}
 	],
 	"allow_custom_firmware_upload": true,
